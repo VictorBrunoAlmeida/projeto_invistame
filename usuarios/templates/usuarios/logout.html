@@ -1,0 +1,10 @@
+{% extends "investimentos/base.html" %}
+{% load crispy_forms_tags %}
+{% block conteudo %}
+
+<div class="container" style="padding:30px;">
+    <h1>Você saiu do sistema</h1>
+    <p>Logout realizado com sucesso!</p>
+    <a href="{% url 'login' %}" class="btn btn-primary">Fazer login novamente</a>
+</div>
+{% endblock %}
